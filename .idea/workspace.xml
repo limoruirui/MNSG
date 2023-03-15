@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cb22b90-fbb2-45db-bef2-39eb0f9005cf" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/domain/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/domain/GetUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/domain/_Cipher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/utils/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/utils/ReadJsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/utils/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/utils/WriteResourceFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourceJP.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/resourceTW.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/result/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/static/msng_decrypt.png" afterDir="false" />
+    <list default="true" id="7cb22b90-fbb2-45db-bef2-39eb0f9005cf" name="变更" comment="update README.md">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/domain/ResourceDecrypt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/resourceDecrypt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/domain/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/domain/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/utils/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mnsg/resource/utils/Request.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
+        <option value="package.json" />
         <option value="Class" />
       </list>
     </option>
@@ -55,11 +46,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/177686/IdeaProjects/mnsg/src/main/static",
+    "javascript.nodejs.core.library.configured.version": "14.17.0",
+    "javascript.nodejs.core.library.typings.version": "14.17.0",
+    "last_opened_file_path": "C:/Users/177686/IdeaProjects/chapter15",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,8 +94,25 @@
       <option name="presentableId" value="Default" />
       <updated>1678628438911</updated>
       <workItem from="1678628441535" duration="14888000" />
-      <workItem from="1678709154890" duration="18705000" />
+      <workItem from="1678709154890" duration="26353000" />
+      <workItem from="1678845357411" duration="617000" />
+      <workItem from="1678868630864" duration="4556000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交">
+      <created>1678767250372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678767250372</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update README.md">
+      <created>1678767645951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678767645951</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +128,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
 </project>

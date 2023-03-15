@@ -3,6 +3,7 @@ package org.mnsg.resource;
 import com.alibaba.fastjson.JSONObject;
 import org.mnsg.resource.domain.Constant;
 import org.mnsg.resource.domain.GetUrl;
+import org.mnsg.resource.domain.ResourceDecrypt;
 import org.mnsg.resource.utils.ReadJsonUtil;
 import org.mnsg.resource.utils.Request;
 import org.mnsg.resource.utils.WriteResourceFile;
@@ -11,8 +12,13 @@ import java.io.InputStream;
 
 public class App {
     public static void main(String[] args) {
-        //读取整个资源文件
-        JSONObject jsonObject = ReadJsonUtil.readJson("resourceJP.json");
+        // 下载资源文件, 并aes解密成明文, 若无法通过远程下载, 则读取本地文件
+        JSONObject jsonObject = ResourceDecrypt._decrypt();
+        if (jsonObject == null) {
+            //读取整个资源文件
+            System.out.println("远程下载资源链接失败, 通过读取本地资源文件进行下载(本地资源文件可能并非最新)");
+            jsonObject = ReadJsonUtil.readJson("resourceJP.json");
+        }
         Constant.RESOURCE_VERSION = jsonObject.getString("version");
         JSONObject resourceJsonObject = jsonObject.getJSONObject("assets");
         //遍历通过遍历json所有的key 获取json的value 并对value进行处理获取资源文件的真实链接 并下载保存到 src/main/result 文件夹中
@@ -20,7 +26,7 @@ public class App {
         for (Object o : resourceJsonObject.keySet().toArray()) {
             //遍历获取key
             String filePath = String.valueOf(o);
-            if (!filePath.contains("character/stand")) {
+            if (!filePath.contains("/stand")) {
                 continue;
             }
             try {
