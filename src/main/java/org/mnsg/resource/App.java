@@ -26,7 +26,12 @@ public class App {
         for (Object o : resourceJsonObject.keySet().toArray()) {
             //遍历获取key
             String filePath = String.valueOf(o);
-            if (!filePath.contains("/stand")) {
+            //孤儿和战神
+            if (!(filePath.contains("character/stand") | filePath.contains("summon/stand"))) {
+            //战神
+//            if (!(filePath.contains("summon/stand"))) {
+                // 表情包
+//            if (!(filePath.contains("raid/stamp"))) {
                 continue;
             }
             try {
